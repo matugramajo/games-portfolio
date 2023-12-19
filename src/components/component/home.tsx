@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 export function Home() {
   return (
     <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col sticky top-0">
-	<header className="px-4 lg:px-6 h-20 flex items-center border-b-2 border-pink-300 bg-pink-200">
+	<header className="px-4 lg:px-6 h-20 flex items-center bg-pink-200">
         <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_">
           <TwitchIcon  className="h-8 w-8" />
           <span className="sr-only">Matutuca</span>
@@ -50,13 +50,13 @@ export function Home() {
         </Link>
         </nav>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 bg-gradient-to-b from-pink-200 to-pink-50">
         <section>
           <div>
           
           </div>
         </section>
-        <section className="w-full py-16 md:py-32 lg:py-48 bg-pink-50" id="Contact">
+        <section className="w-full py-16 md:py-32 lg:py-48 " id="Contact">
           <div className="container grid items-center gap-8 px-8 md:px-10 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
               <h2 className="text-5xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Contactame (:</h2>
@@ -66,10 +66,10 @@ export function Home() {
               </p>
             </div>
             <form className="flex flex-col gap-4 lg:justify-end">
-              <Input className="max-w-lg" placeholder="Nombre" type="text" />
-              <Input className="max-w-lg" placeholder="Riot ID" type="text" />
-              <Input className="max-w-lg" placeholder="Steam" type="text" />
-              <Input className="max-w-lg" placeholder="¿Por qué deberiamos ser duo?" type="text" />
+              <Input className="w-full" placeholder="Nombre" type="text" />
+              <Input className="w-full" placeholder="Riot ID" type="text" />
+              <Input className="w-full" placeholder="Steam" type="text" />
+              <Input className="w-full" placeholder="¿Por qué deberiamos ser duo?" type="text" />
               <Button className="bg-pink-500 text-white" type="submit">
                 Enviar
               </Button>
@@ -77,7 +77,7 @@ export function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 border-t-2 border-pink-300 bg-pink-200">
+      <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 bg-pink-50">
         <p className="text-sm text-pink-500 dark:text-pink-400">© Matutuca. Todos los derechos reservados.</p>
       </footer>
     </div>
