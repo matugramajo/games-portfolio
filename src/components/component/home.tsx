@@ -12,7 +12,7 @@ export function Home() {
           <TwitchIcon  className="h-8 w-8" />
           <span className="sr-only">Matutuca</span>
         </Link>
-        <nav className="ml-auto sm:gap-6 text-lg hidden md:flex">
+        <nav className="ml-auto gap-6 text-lg hidden md:flex">
           <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
             League of Legends
           </Link>
@@ -26,7 +26,7 @@ export function Home() {
             Contacto
           </Link>
         </nav>
-        <nav className="ml-auto sm:gap-6 text-lg flex md:hidden">
+        <nav className="ml-auto gap-6 text-lg flex md:hidden">
         <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoLMobile">
         
         </Link>
@@ -38,7 +38,6 @@ export function Home() {
           </div>
         </div>
       </Link>
-
         <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#CSGOMobile">
         <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
           <div className="flex items-center justify-center">
@@ -50,6 +49,11 @@ export function Home() {
         </nav>
       </header>
       <main className="flex-1">
+        <section>
+          <div>
+          
+          </div>
+        </section>
         <section className="w-full py-16 md:py-32 lg:py-48 bg-pink-50" id="Contact">
           <div className="container grid items-center gap-8 px-8 md:px-10 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
@@ -65,7 +69,7 @@ export function Home() {
               <Input className="max-w-lg" placeholder="Steam" type="text" />
               <Input className="max-w-lg" placeholder="¿Por qué deberiamos ser duo?" type="text" />
               <Button className="bg-pink-500 text-white" type="submit">
-                Envía
+                Enviar
               </Button>
             </form>
           </div>
