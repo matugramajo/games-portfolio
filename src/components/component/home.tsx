@@ -6,31 +6,33 @@ import { Button } from "@/components/ui/button"
 
 export function Home() {
   return (
-    <div className="bg-pink-50 text-pink-900 min-h-screen flex flex-col">
-	<header className="px-4 lg:px-6 h-20 flex items-center border-b-2 border-pink-200">
+    <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col sticky top-0">
+	<header className="px-4 lg:px-6 h-20 flex items-center border-b-2 border-pink-300 bg-pink-200">
         <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_">
           <TwitchIcon  className="h-8 w-8" />
           <span className="sr-only">Matutuca</span>
         </Link>
         <nav className="ml-auto gap-6 text-lg hidden md:flex">
-          <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
+          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#LoL">
             League of Legends
           </Link>
-          <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#Valo">
+          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#Valo">
             Valorant
           </Link>
-          <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#CSGO">
+          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#CSGO">
             CS:GO
           </Link>
-          <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#Contact">
+          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#Contact">
             Contacto
           </Link>
         </nav>
         <nav className="ml-auto gap-6 text-lg flex md:hidden">
-        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoLMobile">
-        
+        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
+        <div className="flex items-center justify-center w-full h-[30px]">
+          <img src="/LOLIcon.png" alt="Icono League of Legends"  className="w-full h-full object-cover"/>
+        </div>
         </Link>
-        <Link href="#ValoMobile">
+        <Link href="#Valo">
         <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
           <div className="flex items-center justify-center">
             <ValoIcon className="h-8 w-8 text-purple-500" />
@@ -38,7 +40,7 @@ export function Home() {
           </div>
         </div>
       </Link>
-        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#CSGOMobile">
+        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#CSGO">
         <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
           <div className="flex items-center justify-center">
             <CSGOIcon className="h-8 w-8 text-purple-500" />
@@ -75,7 +77,7 @@ export function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 border-t-2 border-pink-200 bg-pink-50">
+      <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 border-t-2 border-pink-300 bg-pink-200">
         <p className="text-sm text-pink-500 dark:text-pink-400">© Matutuca. Todos los derechos reservados.</p>
       </footer>
     </div>
