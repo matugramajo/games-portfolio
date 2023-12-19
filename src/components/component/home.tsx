@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function Home() {
   return (
-    <div className="bg-pink-50 text-pink-900">
+    <div className="bg-pink-50 text-pink-900 min-h-screen flex flex-col">
 	<header className="px-4 lg:px-6 h-20 flex items-center border-b-2 border-pink-200">
         <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_">
           <TwitchIcon  className="h-8 w-8" />
