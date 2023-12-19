@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button"
 
 export function Home() {
   return (
-    <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col sticky top-0">
-	<header className="px-4 lg:px-6 h-20 flex items-center bg-pink-200">
+    <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col">
+	<header className="px-4 lg:px-6 h-20 flex items-center bg-pink-200 sticky top-0">
         <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_">
           <TwitchIcon  className="h-8 w-8" />
           <span className="sr-only">Matutuca</span>
@@ -50,10 +50,36 @@ export function Home() {
         </Link>
         </nav>
       </header>
-      <main className="flex-1 bg-gradient-to-b from-pink-200 to-pink-50">
+      <main className="flex-1 bg-gradient-to-b from-pink-200 to-pink-50 flex justify-center">
+      <div className="max-w-[1024px]">
         <section>
-          <div>
-          
+        <div className="flex justify-evenly flex-col-reverse md:flex-row px-8 ">
+            <div className="flex-initial w-100">
+              <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Sobre mi</h2>
+              <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolore commodi sequi, quo, iure architecto impedit quaerat vel vitae tenetur officiis cupiditate expedita in assumenda iusto repellat totam id quam.
+              </p>
+            </div>
+            <div className="flex justify-center my-8 md:">
+              <div className="h-full w-[150px]">
+                <img src="/Icon.png" alt="Icono League of Legends"  className="w-full h-full object-cover"></img>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="px-8 pt-[80px]" id="LoL">
+          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de League of Legends</h2>
+          </div>
+        </section>
+        <section>
+          <div className="px-8 pt-[80px]"  id="Valo">
+          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de Valorant</h2>
+          </div>
+        </section>
+        <section>
+          <div className="px-8 pt-[80px]"  id="CSGO">
+          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de CS:GO</h2>
           </div>
         </section>
         <section className="w-full py-16 md:py-32 lg:py-48 " id="Contact">
@@ -76,6 +102,7 @@ export function Home() {
             </form>
           </div>
         </section>
+      </div>
       </main>
       <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 bg-pink-50">
         <p className="text-sm text-pink-500 dark:text-pink-400">© Matutuca. Todos los derechos reservados.</p>
