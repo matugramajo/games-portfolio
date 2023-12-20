@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+// import { Games } from "./games";
+import { AutoComplete } from 'primereact/autocomplete';
 
 
 export function Home() {
@@ -29,7 +31,10 @@ export function Home() {
         <nav className="ml-auto gap-6 text-lg flex md:hidden">
         <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
         <div className="flex items-center justify-center w-full h-[30px]">
-          <img src="/LOLIcon.png" alt="Icono League of Legends"  className="w-full h-full object-cover"/>
+          <div className="flex items-center justify-center">
+            <LoLIcon className="h-8 w-8 text-purple-500" />
+            <span className="sr-only">LoLIcon</span>
+          </div>
         </div>
         </Link>
         <Link href="#Valo">
@@ -70,16 +75,25 @@ export function Home() {
         <section>
           <div className="px-8 pt-[80px]" id="LoL">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de League of Legends</h2>
+          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+                Mis mejores plays (o mas divertidas) en League of Legends c:
+          </p>
           </div>
         </section>
         <section>
           <div className="px-8 pt-[80px]"  id="Valo">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de Valorant</h2>
+          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+                Mis mejores plays en Valorant c:
+          </p>
           </div>
         </section>
         <section>
           <div className="px-8 pt-[80px]"  id="CSGO">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de CS:GO</h2>
+          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+                Mis mejores plays en CS:GO/CS2 c:
+          </p>
           </div>
         </section>
         <section className="w-full py-16 md:py-32 lg:py-48 " id="Contact">
@@ -92,6 +106,10 @@ export function Home() {
               </p>
             </div>
             <form className="flex flex-col gap-4 lg:justify-end">
+            {/* <span className="p-float-label">
+              <AutoComplete inputId="ac" value={value} suggestions={items} completeMethod={search} onChange={(e) => setValue(e.value)} />
+              <label htmlFor="ac">Nombre</label>
+            </span> */}
               <Input className="w-full" placeholder="Nombre" type="text" />
               <Input className="w-full" placeholder="Riot ID" type="text" />
               <Input className="w-full" placeholder="Steam" type="text" />
@@ -128,6 +146,40 @@ function TwitchIcon(props:React.HTMLAttributes<SVGElement>) {
     >
       <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
     </svg>
+  )
+}
+
+function LoLIcon(props:React.HTMLAttributes<SVGElement>) {
+  return (
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="30px" height="28px" viewBox="0 0 100.000000 110.000000"
+    preserveAspectRatio="xMidYMid meet">
+
+    <g transform="translate(0.000000,110.000000) scale(0.100000,-0.100000)"
+    fill="#880E4F" stroke="none">
+    <path d="M144 1065 c-3 -8 10 -36 30 -64 l36 -49 0 -409 0 -409 -50 -49 c-38
+    -37 -47 -52 -38 -62 8 -10 84 -13 367 -13 l357 0 68 69 c103 104 108 101 -204
+    101 l-260 0 0 164 c0 114 -3 165 -11 168 -9 3 -9 9 0 25 12 23 16 497 5 527
+    -9 23 -292 24 -300 1z m292 -479 c2 -12 1 -13 -3 -1 -6 21 -19 19 -37 -7 -22
+    -32 -20 -57 7 -68 22 -10 22 -10 -3 -7 -35 3 -41 56 -10 87 24 24 44 22 46 -4z"/>
+    <path d="M500 962 c0 -15 13 -21 70 -31 304 -55 467 -399 310 -653 l-29 -48
+    28 0 c27 0 32 6 62 78 41 98 52 230 24 314 -57 176 -175 292 -344 342 -76 22
+    -121 21 -121 -2z"/>
+    <path d="M500 714 c0 -144 2 -165 15 -160 10 4 15 -1 16 -17 0 -22 0 -22 9 -1
+    9 23 36 38 45 25 3 -5 14 -7 25 -4 18 5 20 1 18 -24 -2 -24 -6 -29 -20 -25
+    -10 2 -18 9 -18 15 0 7 -4 7 -12 -1 -7 -7 -25 -12 -41 -12 -22 0 -28 4 -23 16
+    3 8 2 12 -4 9 -6 -4 -10 -68 -10 -156 l0 -149 138 0 c156 0 157 1 201 87 108
+    215 8 468 -215 543 -32 11 -74 20 -91 20 l-33 0 0 -166z"/>
+    <path d="M128 803 c-33 -35 -83 -134 -99 -196 -6 -27 -10 -87 -7 -140 3 -83 8
+    -100 45 -177 23 -47 53 -96 67 -109 l26 -24 0 27 c0 15 -17 56 -39 92 -46 76
+    -66 167 -58 257 8 83 20 122 62 192 21 34 35 69 33 83 l-3 24 -27 -29z"/>
+    <path d="M136 615 c-26 -77 -26 -165 -1 -235 l20 -55 3 88 c1 48 1 126 0 175
+    l-3 87 -19 -60z"/>
+    <path d="M561 534 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
+    <path d="M607 543 c-4 -3 -7 -11 -7 -17 0 -6 5 -5 12 2 6 6 9 14 7 17 -3 3 -9
+    2 -12 -2z"/>
+    </g>
+  </svg>
   )
 }
 
