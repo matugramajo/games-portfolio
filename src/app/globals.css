@@ -29,3 +29,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8BBD0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F48FB1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8638f;
+}
