@@ -26,6 +26,7 @@ export function Home() {
   const handleSubmit = (e: any) => {
     e.preventDefault()
     console.log(values)
+    fetch('/api/send',{method:'POST', body:JSON.stringify(values)})
   }
 
   return (
@@ -173,7 +174,7 @@ export function Home() {
         <section className="w-full py-16 md:py-32 lg:py-48 " id="Contact">
           <div className="container grid items-center gap-8 px-8 md:px-10 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
-              <h2 className="text-5xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Contactame (:</h2>
+              <h2 className="text-5xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Juguemos (:</h2>
               <p className="max-w-[700px] text-lg md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400">
                 Pongámonos en contacto y juguemos juntos. Llena el formulario para postularte como duo o contactame a través de las
                 redes sociales.
@@ -194,7 +195,7 @@ export function Home() {
       </main>
       <footer className="flex gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 bg-pink-50 justify-around flex-col-reverse">
         <p className="text-sm text-pink-500 dark:text-pink-400">© Matutuca (?)</p>
-        {/* <div className="flex flex-row">
+        <div className="flex flex-row">
           <Link href="">
             <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
               <div className="flex items-center justify-center">
@@ -219,7 +220,7 @@ export function Home() {
               </div>
             </div>
           </Link>
-          </div> */}
+          </div>
       </footer>
     </div>
   )
