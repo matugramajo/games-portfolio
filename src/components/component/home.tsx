@@ -1,25 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-// import { Games } from "./games";
-import { AutoComplete } from 'primereact/autocomplete';
 
 
 export function Home() {
   return (
     <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col">
 	<header className="px-4 lg:px-6 h-20 flex items-center bg-pink-200 sticky top-0">
-        <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_">
+        <Link className="flex items-center justify-center" href="https://www.twitch.tv/matutuca_" target="_blank">
           <TwitchIcon  className="h-8 w-8" />
           <span className="sr-only">Matutuca</span>
         </Link>
         <nav className="ml-auto gap-6 text-lg hidden md:flex">
-          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#LoL">
-            League of Legends
-          </Link>
           <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#Valo">
             Valorant
+          </Link>
+          <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#LoL">
+            League of Legends
           </Link>
           <Link className="font-semibold hover:underline underline-offset-4 text-pink-900" href="#CSGO">
             CS:GO
@@ -29,14 +27,6 @@ export function Home() {
           </Link>
         </nav>
         <nav className="ml-auto gap-6 text-lg flex md:hidden">
-        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
-        <div className="flex items-center justify-center w-full h-[30px]">
-          <div className="flex items-center justify-center">
-            <LoLIcon className="h-8 w-8 text-purple-500" />
-            <span className="sr-only">LoLIcon</span>
-          </div>
-        </div>
-        </Link>
         <Link href="#Valo">
         <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
           <div className="flex items-center justify-center">
@@ -45,6 +35,14 @@ export function Home() {
           </div>
         </div>
       </Link>
+        <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#LoL">
+        <div className="flex items-center justify-center w-full h-[30px]">
+          <div className="flex items-center justify-center">
+            <LoLIcon className="h-8 w-8 text-purple-500" />
+            <span className="sr-only">LoLIcon</span>
+          </div>
+        </div>
+        </Link>
         <Link className="font-semibold hover:underline underline-offset-4 text-pink-600" href="#CSGO">
         <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
           <div className="flex items-center justify-center">
@@ -61,7 +59,7 @@ export function Home() {
         <div className="flex justify-evenly flex-col-reverse md:flex-row px-8 ">
             <div className="flex-initial w-100">
               <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Sobre mi</h2>
-              <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+              <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolore commodi sequi, quo, iure architecto impedit quaerat vel vitae tenetur officiis cupiditate expedita in assumenda iusto repellat totam id quam.
               </p>
             </div>
@@ -72,28 +70,80 @@ export function Home() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="px-8 pt-[80px]" id="LoL">
-          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de League of Legends</h2>
-          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-                Mis mejores plays (o mas divertidas) en League of Legends c:
-          </p>
-          </div>
-        </section>
+        
         <section>
           <div className="px-8 pt-[80px]"  id="Valo">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de Valorant</h2>
-          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+          <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
                 Mis mejores plays en Valorant c:
           </p>
+          <div className="flex justify-evenly flex-col">
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/-N29YqcOVYo">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/tyfuw21v97Y">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/1dnK4fWYKWQ">
+            </iframe>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div className="px-8 pt-[80px]" id="LoL">
+          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de League of Legends</h2>
+          <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+                Mis mejores plays (o mas divertidas) en League of Legends c:
+          </p>
+          <div className="flex justify-evenly flex-col">
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/KIyx1Hdh4lA">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/ZsGIAETA16M">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/qyR2rnNCpLU">
+            </iframe>
+            </div>
+          </div>
           </div>
         </section>
         <section>
           <div className="px-8 pt-[80px]"  id="CSGO">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de CS:GO</h2>
-          <p className="max-w-[700px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
+          <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
                 Mis mejores plays en CS:GO/CS2 c:
           </p>
+          <div className="flex justify-evenly flex-col">
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/4u5ZkK_SjRY">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/m2kIR8VnqNw">
+            </iframe>
+            </div>
+            <div className="pt-[20px]">
+            <iframe className="h-full w-full aspect-video"
+              src="https://www.youtube.com/embed/7kIIDWZqK5A">
+            </iframe>
+            </div>
+          </div>
           </div>
         </section>
         <section className="w-full py-16 md:py-32 lg:py-48 " id="Contact">
@@ -106,10 +156,6 @@ export function Home() {
               </p>
             </div>
             <form className="flex flex-col gap-4 lg:justify-end">
-            {/* <span className="p-float-label">
-              <AutoComplete inputId="ac" value={value} suggestions={items} completeMethod={search} onChange={(e) => setValue(e.value)} />
-              <label htmlFor="ac">Nombre</label>
-            </span> */}
               <Input className="w-full" placeholder="Nombre" type="text" />
               <Input className="w-full" placeholder="Riot ID" type="text" />
               <Input className="w-full" placeholder="Steam" type="text" />
