@@ -5,9 +5,10 @@ import Link from "next/link"
 import {TwitchIcon, LoLIcon, ValoIcon, CSGOIcon, IGIcon, TWIcon, SteamIcon} from "@/components/component/icons"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-
+import { useToast } from "@/components/ui/use-toast"
 
 export function Home() {
+  const {toast} = useToast()
   const [values, setValues] = useState({
     name: "",
     riotid: "",
@@ -26,8 +27,10 @@ export function Home() {
   const handleSubmit = (e: any) => {
     e.preventDefault()
     console.log(values)
-    fetch('/api/send',{method:'POST', body:JSON.stringify(values)})
+    fetch('/api/send',{method:'POST', body:JSON.stringify(values)}).then(() => toast({description: 'Gracias por la solicitud (: Espero que juguemos pronto <3'}))
   }
+
+
 
   return (
     <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col">
@@ -84,11 +87,11 @@ export function Home() {
             <div className="flex-initial w-100">
               <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Sobre mi</h2>
               <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolore commodi sequi, quo, iure architecto impedit quaerat vel vitae tenetur officiis cupiditate expedita in assumenda iusto repellat totam id quam.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim fugiat illum explicabo, modi perferendis earum, eaque nam at non nemo distinctio, veniam tenetur officiis labore consectetur aliquam incidunt vitae!
               </p>
             </div>
             <div className="flex justify-center my-8">
-              <div className="h-full w-[150px]">
+              <div className="h-full w-200">
                 <img src="/Icon.png" alt="Icono League of Legends"  className="w-full h-full object-cover"></img>
               </div>
             </div>
@@ -103,7 +106,7 @@ export function Home() {
           </div>
         </section>
         <section>
-          <div className="flex justify-evenly flex-col px-8 md:flex-row">
+          <div className="flex justify-between flex-col px-8 md:flex-row">
             <div className="pt-[20px]">
             <iframe className="h-full w-full aspect-video"
               src="https://www.youtube.com/embed/-N29YqcOVYo" allow="fullscreen;">
@@ -123,11 +126,11 @@ export function Home() {
         </section>
         <section>
           <div className="px-8 pt-[80px]" id="LoL">
-          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de League of Legends</h2>
+          <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de LoL</h2>
           <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
                 Mis mejores plays (o mas divertidas) en League of Legends c:
           </p>
-          <div className="flex justify-evenly flex-col md:flex-row">
+          <div className="flex justify-between flex-col md:flex-row">
             <div className="pt-[20px]">
             <iframe className="h-full w-full aspect-video"
               src="https://www.youtube.com/embed/KIyx1Hdh4lA" allow="fullscreen;">
@@ -152,7 +155,7 @@ export function Home() {
           <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
                 Mis mejores plays en CS:GO/CS2 c:
           </p>
-          <div className="flex justify-evenly flex-col md:flex-row">
+          <div className="flex justify-between flex-col md:flex-row">
             <div className="pt-[20px]">
             <iframe className="h-full w-full aspect-video"
               src="https://www.youtube.com/embed/4u5ZkK_SjRY" allow="fullscreen;">
