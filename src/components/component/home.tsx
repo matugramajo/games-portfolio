@@ -9,12 +9,15 @@ import { useToast } from "@/components/ui/use-toast"
 
 export function Home() {
   const {toast} = useToast()
-  const [values, setValues] = useState({
+
+  const defaultValues = {
     name: "",
     riotid: "",
     steam: "",
     serduo: ""
-  })
+  }
+
+  const [values, setValues] = useState(defaultValues)
 
   const handleChange = (e: any) => {
     const {value, name} = e.target
@@ -27,10 +30,11 @@ export function Home() {
   const handleSubmit = (e: any) => {
     e.preventDefault()
     console.log(values)
-    fetch('/api/send',{method:'POST', body:JSON.stringify(values)}).then(() => toast({description: 'Gracias por la solicitud (: Espero que juguemos pronto <3'}))
+    fetch('/api/send',{method:'POST', body:JSON.stringify(values)}).then(() => {
+      toast({description: 'Gracias por la solicitud (: Espero que juguemos pronto <3'}) 
+      setValues (defaultValues)
+    })
   }
-
-
 
   return (
     <div className="bg-pink-100 text-pink-900 min-h-screen flex flex-col">
