@@ -87,7 +87,7 @@ export function Home() {
             <div className="flex-initial w-100">
               <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Sobre mi</h2>
               <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-              Soy Matilde, me gusta que me digan Matu. Tengo 21 años y recien a los 18 empecé a introducirme en los videojuegos, jugando al LoL en una notebook que era el unico juego que corria, asi que hasta casi dos años despues que me pude armar mi primera PC fue el unico juego que jugué. Hoy en dia disfruto jugar Valorant, LoL y CS. Tambien al isaac (en un año le meti 500hs xD). Soy hincha de 9z💜, pero en general disfruto ver eSports sea cual sea el team, mas si es para bancar a la region.
+              Soy Matilde, me gusta que me digan Matu. Tengo 21 años y recién a los 18 empecé a introducirme en los videojuegos, jugando al LoL en una notebook que era el único juego que corriá, asi que hasta casi dos años después que me pude armar mi primera PC fue el único juego que jugué. Hoy en día disfruto jugar Valorant, LoL y CS. También al isaac (en un año le meti 500hs xD). Soy hincha de 9z💜, pero en general disfruto ver eSports sea cual sea el team, más si es para bancar a la región.
               </p>
             </div>
             <div className="flex justify-center my-8">
@@ -101,7 +101,7 @@ export function Home() {
           <div className="px-8 pt-[80px]"  id="Valo">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de Valorant</h2>
           <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-                Mis mejores plays en Valorant c:
+                Mis mejores plays en Valorant 😎
           </p>
           </div>
         </section>
@@ -128,7 +128,7 @@ export function Home() {
           <div className="px-8 pt-[80px]" id="LoL">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de LoL</h2>
           <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-                Mis mejores plays (o mas divertidas) en League of Legends c:
+                Mis mejores plays (o mas divertidas) en League of Legends 🫡
           </p>
           <div className="flex justify-between flex-col md:flex-row">
             <div className="pt-[20px]">
@@ -153,7 +153,7 @@ export function Home() {
           <div className="px-8 pt-[80px]"  id="CSGO">
           <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Mejores plays de CS:GO</h2>
           <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-                Mis mejores plays en CS:GO/CS2 c:
+                Mis mejores plays en CS:GO/CS2 🤓
           </p>
           <div className="flex justify-between flex-col md:flex-row">
             <div className="pt-[20px]">
