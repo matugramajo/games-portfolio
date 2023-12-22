@@ -87,12 +87,12 @@ export function Home() {
             <div className="flex-initial w-100">
               <h2 className="text-4xl font-bold tracking-tighter md:text-6xl/tight text-pink-700">Sobre mi</h2>
               <p className="max-w-[700px] pt-[10px] text-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-pink-400 text-justify">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim fugiat illum explicabo, modi perferendis earum, eaque nam at non nemo distinctio, veniam tenetur officiis labore consectetur aliquam incidunt vitae!
+              Soy Matilde, me gusta que me digan Matu. Tengo 21 años y recien a los 18 empecé a introducirme en los videojuegos, jugando al LoL en una notebook que era el unico juego que corria, asi que hasta casi dos años despues que me pude armar mi primera PC fue el unico juego que jugué. Hoy en dia disfruto jugar Valorant, LoL y CS. Tambien al isaac (en un año le meti 500hs xD). Soy hincha de 9z💜, pero en general disfruto ver eSports sea cual sea el team, mas si es para bancar a la region.
               </p>
             </div>
             <div className="flex justify-center my-8">
               <div className="h-full w-200">
-                <img src="/Icon.png" alt="Icono League of Legends"  className="w-full h-full object-cover"></img>
+                <img src="/Icon.png" alt="Icono League of Legends"  className="w-100 h-100 object-cover"></img>
               </div>
             </div>
           </div>
