@@ -211,7 +211,7 @@ export function Home() {
               </div>
             </div>
           </Link>
-          <Link href="https://twitter.com/_____matilde" target="_blank">
+          <Link href="#">
             <div className="font-semibold hover:underline underline-offset-4 text-pink-600 px-4">
               <div className="flex items-center justify-center">
                 <TWIcon className="h-8 w-8 text-purple-500" />
