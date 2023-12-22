@@ -196,24 +196,24 @@ export function Home() {
       <footer className="flex gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-8 md:px-10 bg-pink-50 justify-around flex-col-reverse">
         <p className="text-sm text-pink-500 dark:text-pink-400">© Matutuca (?)</p>
         <div className="flex flex-row">
-          <Link href="">
-            <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
+          <Link href="https://www.instagram.com/matildegramajo/" target="_blank">
+            <div className="font-semibold hover:underline underline-offset-4 text-pink-600 px-4">
               <div className="flex items-center justify-center">
                 <IGIcon className="h-8 w-8 text-purple-500" />
                 <span className="sr-only">IGIcon</span>
               </div>
             </div>
           </Link>
-          <Link href="">
-            <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
+          <Link href="https://twitter.com/_____matilde" target="_blank">
+            <div className="font-semibold hover:underline underline-offset-4 text-pink-600 px-4">
               <div className="flex items-center justify-center">
                 <TWIcon className="h-8 w-8 text-purple-500" />
                 <span className="sr-only">TWIcon</span>
               </div>
             </div>
           </Link>
-          <Link href="">
-            <div className="font-semibold hover:underline underline-offset-4 text-pink-600">
+          <Link href="https://steamcommunity.com/profiles/76561199050899273/" target="_blank">
+            <div className="font-semibold hover:underline underline-offset-4 text-pink-600 px-4">
               <div className="flex items-center justify-center">
                 <SteamIcon className="h-8 w-8 text-purple-500" />
                 <span className="sr-only">SteamIcon</span>

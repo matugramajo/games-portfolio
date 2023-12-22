@@ -85,7 +85,7 @@ export function CSGOIcon(props:React.HTMLAttributes<SVGElement>) {
 
 export function IGIcon(props:React.HTMLAttributes<SVGElement>) {
     return (
-      <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#F472B6">
+      <svg width="30px" height="30px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#F472B6">
 
         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
@@ -107,7 +107,7 @@ export function IGIcon(props:React.HTMLAttributes<SVGElement>) {
 
 export function TWIcon(props:React.HTMLAttributes<SVGElement>) {
   return (
-    <svg fill="#F472B6" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="800px" height="800px" viewBox="0 0 31.812 26">
+    <svg fill="#F472B6" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="30px" height="30px" viewBox="0 0 31.812 26">
 
       <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
@@ -120,7 +120,7 @@ export function TWIcon(props:React.HTMLAttributes<SVGElement>) {
 
 export function SteamIcon(props:React.HTMLAttributes<SVGElement>) {
   return (
-  <svg fill="#F472B6" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <svg fill="#F472B6" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
